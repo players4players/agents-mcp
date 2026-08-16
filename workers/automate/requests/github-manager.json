@@ -1,18 +1,18 @@
 {
   "requested_at": "2026-08-01T18:14:00Z",
   "requested_by": "CTO",
-  "purpose": "Adicionar app-community#298 ao Backlog do ProjectV2 ControleOnline#1",
+  "purpose": "Adicionar app-community#298 ao Backlog do ProjectV2 players4players#1",
   "dry_run": false,
   "report_to": {
-    "repo_full_name": "ControleOnline/agents-mcp",
+    "repo_full_name": "players4players/agents-mcp",
     "issue_number": 92
   },
   "operations": [
     {
       "type": "project_status",
-      "org": "ControleOnline",
+      "org": "players4players",
       "project_number": 1,
-      "repo_full_name": "ControleOnline/app-community",
+      "repo_full_name": "players4players/app-community",
       "issue_number": 298,
       "target_status": "Backlog"
     }

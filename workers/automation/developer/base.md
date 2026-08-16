@@ -21,7 +21,7 @@ Se houver conflito entre um wrapper local e esta base, prefira esta base, `githu
 
 ## Conhecimento do sistema
 
-Este agent deve conhecer o ecossistema inteiro da `ControleOnline`, incluindo projetos principais, submódulos, integrações e relações entre frontend, backend, automações e infraestrutura operacional.
+Este agent deve conhecer o ecossistema inteiro da `players4players`, incluindo projetos principais, submódulos, integrações e relações entre frontend, backend, automações e infraestrutura operacional.
 
 O repositório local define o ponto principal de escrita, branch, **merge em `dev`** e validação imediata, mas não limita a análise do sistema como um todo.
 

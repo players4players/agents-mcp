@@ -74,7 +74,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'controleonline-agent-dispatch',
+            'User-Agent': 'players4players-agent-dispatch',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -271,7 +271,7 @@ function writeOutputFile(payload) {
 async function main() {
   const role = getRole();
   const meta = ROLE_META[role];
-  const org = env('AGENT_PROJECT_ORG', 'ControleOnline');
+  const org = env('AGENT_PROJECT_ORG', 'players4players');
   const projectNumber = Number(env('AGENT_PROJECT_NUMBER', '1'));
   const dryRun = env('AGENT_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatuses = parseCsv(env('AGENT_WORK_STATUSES', 'Ready,Working'));

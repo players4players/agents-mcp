@@ -14,7 +14,7 @@ A fonte primaria da fila sao **issues + labels** (e estado open/closed).
 - **Nao e proibido** usar GitHub Projects (ProjectV2).
 - **Prefira nao usar** ProjectV2 quando labels e busca de issues bastarem (fila, elegibilidade, handoff).
 - Use ProjectV2 quando for preciso: associar issue recem-criada ao board, ler status/coluna complementar, ou quando o prompt pedir explicitamente.
-- Projeto operacional padrao da org: [ControleOnline Project #1](https://github.com/orgs/players4players/projects/1/views/1) (`organization` `ControleOnline`, `number` `1`).
+- Projeto operacional padrao da org: [players4players Project #1](https://github.com/orgs/players4players/projects/1/views/1) (`organization` `players4players`, `number` `1`).
 
 ## Associacao obrigatoria ao criar task
 

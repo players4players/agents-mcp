@@ -47,9 +47,9 @@ Exemplo:
   "operations": [
     {
       "type": "project_status",
-      "org": "ControleOnline",
+      "org": "players4players",
       "project_number": 1,
-      "repo_full_name": "ControleOnline/app-community",
+      "repo_full_name": "players4players/app-community",
       "issue_number": 74,
       "target_status": "In Review"
     }

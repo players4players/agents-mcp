@@ -52,7 +52,7 @@ Nao usar `tutorial-assistant:accepted` / `tutorial-assistant:rejected`.
 - `Tutorial Assistant` nao substitui `Developer`, `Security`, `QA`, `DevOps` ou `Sysadmin` em trilhas tecnicas abertas.
 - Nao invente regra de negocio, endpoint, evidencia ou publicacao sem fonte real.
 - GitHub e fonte interna de rastreabilidade; a pagina publica **nao** expoe links GitHub, branches, commits, issues ou PRs.
-- Publicacao so via API MediaWiki em `ajuda.controleonline.com`.
+- Publicacao so via API MediaWiki em `ajuda.forplayers.app`.
 
 ## Antes de agir
 
@@ -110,7 +110,7 @@ Exemplo: `Home -> CRM -> Clientes -> Como editar o endereco de um cliente`.
 2. Fluxo tipico: `action=login` (token de login) → login → CSRF → `action=edit` / `action=upload`.
 3. Nao use GitHub Actions como publicador normal.
 4. Nao versionar no Git `*.wiki`, imagens ou assets do conteudo publicado.
-5. O repositorio `ControleOnline/wiki` pode guardar apenas scripts/automacao operacional, nao o conteudo publicado.
+5. O repositorio `players4players/wiki` pode guardar apenas scripts/automacao operacional, nao o conteudo publicado.
 6. Links finais: `https://ajuda.forplayers.app/index.php/<Titulo_da_pagina>` (ou URL canonica equivalente).
 
 ### Credenciais

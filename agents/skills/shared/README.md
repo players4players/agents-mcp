@@ -19,9 +19,9 @@ Toda solicitacao precisa estar vinculada a pelo menos uma task ou issue valida n
 
 ## Priority Projects Policy
 
-- `ControleOnline/app-community`
-- `ControleOnline/api-community`
-- `ControleOnline/api-whatsapp`
+- `players4players/app-community`
+- `players4players/api-community`
+- `players4players/api-whatsapp`
 
 ## Agent Delegation Policy
 

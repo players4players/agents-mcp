@@ -57,7 +57,7 @@ async function githubGraphQL(query, variables = {}) {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
-      'User-Agent': 'controleonline-qa-automation'
+      'User-Agent': 'players4players-qa-automation'
     },
     body: JSON.stringify({ query, variables })
   });
@@ -595,7 +595,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('QA_PROJECT_ORG', 'ControleOnline');
+  const org = env('QA_PROJECT_ORG', 'players4players');
   const projectNumber = Number(env('QA_PROJECT_NUMBER', '1'));
   const dryRun = env('QA_DRY_RUN', 'true').toLowerCase() !== 'false';
   const securityApprovers = parseCsv(env('QA_SECURITY_APPROVERS')).map((login) => login.toLowerCase());

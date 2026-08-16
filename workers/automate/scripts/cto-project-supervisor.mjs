@@ -14,7 +14,7 @@ const DEFAULT_KNOWN_AGENT_LOGINS = 'github-copilot[bot],copilot-swe-agent,copilo
 const DEFAULT_UNSUPPORTED_LABEL = 'ops:copilot-unavailable';
 const DEFAULT_CORE_REPOSITORY = 'players4players/agents-mcp';
 const DEFAULT_PRIORITY_REPOSITORIES =
-  'ControleOnline/app-community,ControleOnline/api-community,ControleOnline/api-whatsapp';
+  'players4players/app-community,players4players/api-community,players4players/api-whatsapp';
 const DEFAULT_STALE_HOURS = '24';
 const DEFAULT_STALE_DRAFT_HOURS = '24';
 const DEFAULT_STALE_OPEN_PR_HOURS = '48';
@@ -54,7 +54,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'controleonline-cto-supervisor',
+            'User-Agent': 'players4players-cto-supervisor',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -102,7 +102,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'controleonline-cto-supervisor',
+            'User-Agent': 'players4players-cto-supervisor',
             ...(options.headers || {}),
           },
         });
@@ -1189,7 +1189,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('CTO_PROJECT_ORG', 'ControleOnline');
+  const org = env('CTO_PROJECT_ORG', 'players4players');
   const projectNumber = Number(env('CTO_PROJECT_NUMBER', '1'));
   const dryRun = env('CTO_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatus = env('CTO_WORK_STATUS', 'Ready');

@@ -85,7 +85,7 @@ Modelo minimo de secao no `AGENTS.md`:
 
 | Categoria | Destino |
 | --- | --- |
-| Home do módulo | https://github.com/ControleOnline/<repo>/wiki |
+| Home do módulo | https://github.com/players4players/<repo>/wiki |
 
 ### Por categoria — <nome>
 
@@ -97,7 +97,7 @@ Modelo minimo de secao no `AGENTS.md`:
 
 | Módulo | Entrada |
 | --- | --- |
-| outro-repo | https://github.com/ControleOnline/outro-repo/wiki |
+| outro-repo | https://github.com/players4players/outro-repo/wiki |
 ```
 
 ## Visoes de modulo

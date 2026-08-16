@@ -5,7 +5,7 @@ const REST_API = 'https://api.github.com';
 const TRACKING_LABELS = ['devops', 'untracked-change'];
 
 const CONFIG = {
-  org: process.env.DEVOPS_PROJECT_ORG || process.env.QA_PROJECT_ORG || 'ControleOnline',
+  org: process.env.DEVOPS_PROJECT_ORG || process.env.QA_PROJECT_ORG || 'players4players',
   projectNumber: Number(process.env.DEVOPS_PROJECT_NUMBER || process.env.QA_PROJECT_NUMBER || 1),
   status:
     process.env.DEVOPS_UNTRACKED_STATUS ||
