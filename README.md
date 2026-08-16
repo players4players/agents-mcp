@@ -1,6 +1,6 @@
 # agents-mcp
 
-Repositório de orquestração dos agents, skills e workers do ecossistema ControleOnline.
+Repositório de orquestração dos agents, skills e workers do ecossistema players4players.
 
 ## Estrutura
 
