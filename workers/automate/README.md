@@ -1,6 +1,6 @@
 # Automate
 
-Esta pasta concentra a politica e a base executavel dos runners operacionais do ecossistema `ControleOnline`.
+Esta pasta concentra a politica e a base executavel dos runners operacionais do ecossistema `players4players`.
 
 ## Agentes cobertos
 

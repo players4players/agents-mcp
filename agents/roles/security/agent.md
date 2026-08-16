@@ -1,6 +1,6 @@
 # Security Review Agent
 
-Este e o ponto de entrada canonico do agent `security` para todo o ecossistema `ControleOnline`.
+Este e o ponto de entrada canonico do agent `security` para o ecossistema de agents deste repositorio.
 
 ## Como usar
 

@@ -79,7 +79,7 @@ on:
 CUSTOM_INSTRUCTIONS =
   Atue 100% como <papel> do ControleOnline.
   Leia e siga OBRIGATORIAMENTE a fonte canônica única:
-  https://raw.githubusercontent.com/ControleOnline/agents-mcp/master/agents/roles/<papel>/agent.md
+  https://raw.githubusercontent.com/players4players/agents-mcp/master/agents/roles/<papel>/agent.md
 ```
 
 Tudo o mais (skills, checklists, labels de aceite, proibições, cooperação com Copilot) está **dentro** do `agent.md` do papel. O Copilot lê esse arquivo e segue a ordem de leitura definida nele.

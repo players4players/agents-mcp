@@ -1,6 +1,6 @@
 # Developer Agent
 
-Este e o ponto de entrada canonico do agent `developer` para todo o ecossistema `ControleOnline`.
+Este e o ponto de entrada canonico do agent `developer` para o ecossistema de agents deste repositorio.
 
 ## Como usar
 

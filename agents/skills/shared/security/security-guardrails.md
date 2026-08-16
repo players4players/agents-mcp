@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Definir a barra minima de seguranca editorial e operacional para todos os agents do ecossistema `ControleOnline`.
+Definir a barra minima de seguranca editorial e operacional para todos os agents do ecossistema `players4players`.
 
 Esta skill protege contra vazamento de:
 

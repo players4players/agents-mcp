@@ -78,7 +78,7 @@ runs:
 
         O Manager aplica labels e **invoca** os workers necessários (QA / Security / Technical Documenter) conforme o branch.
 
-        Fonte: https://raw.githubusercontent.com/ControleOnline/agents-mcp/master/agents/roles/manager/agent.md
+        Fonte: https://raw.githubusercontent.com/players4players/agents-mcp/master/agents/roles/manager/agent.md
         EOF
         )
 

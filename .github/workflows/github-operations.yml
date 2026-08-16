@@ -51,7 +51,7 @@ jobs:
           OPERATIONS_JSON: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.operations_json || '' }}
           OPERATIONS_FILE: ${{ (github.event_name == 'push' || github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !github.event.inputs.operations_json)) && 'workers/automate/requests/github-manager.json' || '' }}
           GITHUB_MANAGER_ALLOWED_LOGINS: luizkim,github-copilot[bot],copilot-swe-agent,copilot
-          GITHUB_MANAGER_PROJECT_ORG: ControleOnline
+          GITHUB_MANAGER_PROJECT_ORG: players4players
           GITHUB_MANAGER_PROJECT_NUMBER: 1
           GITHUB_MANAGER_WORK_STATUSES: Ready,Working
           GITHUB_MANAGER_IN_REVIEW_STATUSES: In Review

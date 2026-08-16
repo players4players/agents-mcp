@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "ControleOnline orchestration repository for GitHub agents, runners, and project automation.",
+  "description": "players4players orchestration repository for GitHub agents, runners, and project automation.",
   "main": "workers/src/index.js",
   "scripts": {
     "test": "node --test tests/*.test.mjs",

@@ -1,6 +1,6 @@
-# ControleOnline GitHub Project MCP Agents
+# players4players GitHub Project MCP Agents
 
-Este repositorio e a fonte oficial para automacoes, agents, runners, workflows e instrucoes operacionais do ecossistema ControleOnline.
+Este repositorio e a fonte oficial para automacoes, agents, runners, workflows e instrucoes operacionais do ecossistema players4players.
 
 ## Fonte canonica
 
@@ -128,7 +128,7 @@ O Manager pode corrigir labels/status que devolvam uma task ao `Developer`, mas 
 
 ## Mode de Acao do Agent (Full Pipeline / Manager)
 
-Quando a automação unificada (`Controle Online - Full Pipeline`) for executada, ela deve seguir **estritamente** a ordem de prioridade abaixo.  
+Quando a automação unificada (`Full Pipeline`) for executada, ela deve seguir **estritamente** a ordem de prioridade abaixo.  
 O princípio é: **sempre atuar no que está mais avançado no pipeline do Manager**, sem incluir a fila paralela do `Developer`.
 
 ### Ordem de prioridade (uma ação por execução)

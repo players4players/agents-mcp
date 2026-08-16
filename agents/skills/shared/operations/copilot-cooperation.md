@@ -1,6 +1,6 @@
 # Copilot Cooperation (obrigatoria)
 
-Skill **transversal**: todo agent do ecossistema `ControleOnline` **deve estender** esta skill. Nenhum papel opera isolado do Copilot Coding Agent, workers, runners ou GitHub Actions quando essas superficies ajudam a concluir o trabalho.
+Skill **transversal**: todo agent do ecossistema `players4players` **deve estender** esta skill. Nenhum papel opera isolado do Copilot Coding Agent, workers, runners ou GitHub Actions quando essas superficies ajudam a concluir o trabalho.
 
 ## Objetivo
 

@@ -24,7 +24,7 @@ O fluxo do `Developer` roda em paralelo e **nao faz parte** do Full Pipeline / M
 
 O Manager **nao** captura issue de produto para implementar, **nao** implementa codigo de produto, **nao** cria branch `task-{id}` de produto e **nao** faz merge em `dev` de repositorios de produto.
 
-**Excecao `agents-mcp`:** Manager e CTO **podem** editar documentacao e governanca em `ControleOnline/agents-mcp` (roles, skills, github-flow, checklists). Nessas mudancas o Manager pode criar `task-{id}`, editar arquivos de docs e mergear em `dev`/`staging` conforme o fluxo do proprio `agents-mcp`. Codigo de produto permanece proibido.
+**Excecao `agents-mcp`:** Manager e CTO **podem** editar documentacao e governanca em `players4players/agents-mcp` (roles, skills, github-flow, checklists). Nessas mudancas o Manager pode criar `task-{id}`, editar arquivos de docs e mergear em `dev`/`staging` conforme o fluxo do proprio `agents-mcp`. Codigo de produto permanece proibido.
 
 A existencia de trabalho elegivel para `Developer` nao bloqueia a rodada do Manager; inconsistencias de labels/status envolvendo Developer podem ser corrigidas na Prioridade 5 (higiene residual + organizacao de board).
 
@@ -198,7 +198,7 @@ Se a higiene nao encontrar desvio → encerre a execucao sem fazer nada alem do 
 ## Regras gerais
 
 - Nunca execute mais de uma acao por rodada **exceto**: (1) Prioridade 4 (Validadores), em que QA/Security podem concluir **varias** issues elegiveis na mesma passagem; (2) Prioridade 5, fechamento de issues com **quarteto completo** de conclusao (varias na mesma passagem).
-- Sempre confirme o estado real no GitHub / Project #1 / Notion Controle de Tarefas antes de agir.
+- Sempre confirme o estado real no GitHub / Project #1 / Notion (board operacional) antes de agir.
 - Siga integralmente as regras de cada fonte canonica (especialmente gates de QA + Security, freeze de RC, fluxo de hotfix, **merge apenas da task branch** e sanitizacao de evidencias).
 - **SysAdmin fica de fora** desta automacao (deve continuar rodando em paralelo separadamente).
 - **Developer** permanece responsavel por captura/implementacao/merge em `dev` de **produto**; Manager so implementa docs/governanca em `agents-mcp`.

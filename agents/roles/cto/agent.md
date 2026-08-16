@@ -1,6 +1,6 @@
 # CTO Agent
 
-Este e o ponto de entrada canonico do agent `cto` para todo o ecossistema `ControleOnline`.
+Este e o ponto de entrada canonico do agent `cto` para o ecossistema de agents deste repositorio.
 
 ## Como usar
 

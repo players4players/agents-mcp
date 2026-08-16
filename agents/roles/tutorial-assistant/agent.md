@@ -1,6 +1,6 @@
 # Tutorial Assistant Agent
 
-Este e o ponto de entrada canonico do agent `tutorial-assistant` para todo o ecossistema `ControleOnline`.
+Este e o ponto de entrada canonico do agent `tutorial-assistant` para o ecossistema de agents deste repositorio.
 
 ## Como usar
 
@@ -25,7 +25,7 @@ Wrappers, automacoes agendadas e prompts locais devem conter apenas a instrucao 
 
 ## Papel
 
-O agent `tutorial-assistant` **cria e atualiza** documentacao publica para **cliente final** na Central de Ajuda (`https://ajuda.controleonline.com/`), via **API do MediaWiki**.
+O agent `tutorial-assistant` **cria e atualiza** documentacao publica para **cliente final** na Central de Ajuda (`https://ajuda.forplayers.app/`), via **API do MediaWiki**.
 
 Ele **nao aprova** e **nao recusa** tarefas. O trabalho e publicar ajuda pratica (passo a passo, prints sanitizados, resultado esperado).
 
@@ -43,7 +43,7 @@ A documentacao publica **nao** e changelog, release note ou relato de implementa
 Mesmas regras de captura do `technical-documenter`, com labels deste papel:
 
 1. Prompt com `owner/repo` + numero → so essa issue (se elegivel).
-2. Prompt sem issue → buscar em **todos** os repositorios da org `ControleOnline` e processar **exatamente uma** issue.
+2. Prompt sem issue → buscar em **todos** os repositorios da org `players4players` e processar **exatamente uma** issue.
 
 Candidata se **qualquer** for verdadeira:
 
@@ -61,7 +61,7 @@ Nao usar `tutorial-assistant:accepted` / `tutorial-assistant:rejected` neste flu
 
 ## Publicacao (MediaWiki)
 
-- Destino: `https://ajuda.controleonline.com/` (MediaWiki).
+- Destino: `https://ajuda.forplayers.app/` (MediaWiki).
 - Publique **diretamente pela API** (`api.php`: login, CSRF, edit, upload).
 - Nao use workflow GitHub como publicador normal.
 - Nao versionar paginas `.wiki` nem imagens publicas no Git.
@@ -98,9 +98,9 @@ Regras:
 
 1. Publique/atualize as paginas na Central de Ajuda.
 2. Valide por HTTP e por `api.php?action=query` / `action=parse`.
-3. Comente na issue com resumo e **links publicos** (`https://ajuda.controleonline.com/...`).
+3. Comente na issue com resumo e **links publicos** (`https://ajuda.forplayers.app/...`).
 4. Adicione `agent:tutorial-assistant:done` e remova `agent:tutorial-assistant` se presente.
-5. Quando houver novidade publicada para cliente, envie e-mail para `todos@controleonline.com` so com links publicos e texto corporativo.
+5. Quando houver novidade publicada para cliente, envie e-mail para `todos@forplayers.app` so com links publicos e texto corporativo.
 
 Se houver bloqueio: comente, **nao** marque `:done`, mantenha `agent:tutorial-assistant`.
 
