@@ -4,6 +4,9 @@ Este e o ponto de entrada canonico do agent `qa` para o ecossistema de agents de
 
 ## Como usar
 
+**Obrigatorio no inicio de toda execucao:** leia `config/ecosystem.config.json` e resolva placeholders (`<OWNER>`, `<env.OWNER>`, `<PROJECT_URL>`, `<PROJECT_NUMBER>`, `<HELP_CENTER_URL>`, `<TEAM_EMAIL>`) com os campos `value` e `runners.defaults`.
+
+
 Todo wrapper local de `qa` deve apontar para este arquivo.
 
 Ao iniciar uma revisao:
