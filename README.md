@@ -32,12 +32,12 @@ workers/            # execução (scripts, runners, automações)
 
 Este repositório é a fonte canônica. Wrappers em `.github/agents/` devem permanecer finos e apontar para `agents/roles/*/agent.md`.
 
-## Configuracao do fork
+## Configuracao do fork (obrigatoria)
 
-Valores de organizacao, Project board, central de ajuda e e-mails **nao** ficam hardcoded na documentacao.
+**Leia sempre** `config/ecosystem.config.json` antes de executar agents ou workers.
 
-Use:
+Valores de organizacao, Project board, repositorios de produto, central de ajuda e e-mails ficam **somente** nesse arquivo (versionado neste fork).
 
+- `config/ecosystem.config.json` — valores reais deste fork
 - `config/ecosystem.config.example.json` — modelo
-- `config/ecosystem.config.json` — valores do seu fork
-- `config/README.md` — tabela de placeholders (`<OWNER>`, `<PROJECT_URL>`, `<HELP_CENTER_URL>`, …)
+- `config/README.md` — placeholders (`<OWNER>`, `<PROJECT_URL>`, `<HELP_CENTER_URL>`, …) e env

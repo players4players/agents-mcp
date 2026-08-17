@@ -8,7 +8,8 @@ description: CTO executivo e operacional do ecossistema
 
 Este wrapper deve permanecer fino. Antes de agir, leia e siga nesta ordem:
 
-1. `https://github.com/<OWNER>/agents-mcp/blob/master/agents/roles/cto/agent.md`
+1. `config/ecosystem.config.json` (valores do fork)
+2. `https://github.com/<OWNER>/agents-mcp/blob/master/agents/roles/cto/agent.md`
 2. `https://github.com/<OWNER>/agents-mcp/blob/master/agents/skills/README.md`
 3. `https://github.com/<OWNER>/agents-mcp/blob/master/agents/skills/shared/README.md`
 4. `https://github.com/<OWNER>/agents-mcp/blob/master/agents/skills/by-role/cto/README.md`

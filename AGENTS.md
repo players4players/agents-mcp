@@ -17,9 +17,19 @@ Entradas principais:
 - `.github/agents/*.agent.md`
 - `workers/automation/`
 - `workers/automate/`
-- `config/ecosystem.config.example.json` — variaveis do fork (`<OWNER>`, project, ajuda, e-mail)
-- `config/README.md` — como preencher a configuracao
+- **`config/ecosystem.config.json`** — **obrigatorio**: valores reais do fork (`owner`, project, repositorios, ajuda, runners)
+- `config/ecosystem.config.example.json` — modelo/schema de referencia
+- `config/README.md` — tabela de placeholders e env
 
+
+
+## Configuracao do fork (obrigatoria)
+
+Antes de qualquer acao operacional, leia **`config/ecosystem.config.json`**.
+
+- Use os campos `value` (e `runners.defaults`) para resolver `<OWNER>`, `<env.OWNER>`, `<PROJECT_URL>`, `<PROJECT_NUMBER>`, `<HELP_CENTER_URL>`, `<TEAM_EMAIL>` e repositorios de produto.
+- A documentacao generica em `agents/` continua com placeholders; **nao** reinsira marca no texto canonico — altere apenas o JSON de config.
+- Tokens (`GITHUB_TOKEN`) nao ficam no arquivo; use secrets do ambiente.
 
 ## Copilot Cooperation
 

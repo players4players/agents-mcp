@@ -1,3 +1,7 @@
+## Configuracao do fork
+
+**Obrigatorio:** leia `config/ecosystem.config.json` no inicio da execucao e resolva todos os placeholders (`<OWNER>`, `<PROJECT_URL>`, etc.) com os campos `value` / `runners.defaults`.
+
 # Agent Execution Baseline
 
 ## Overview

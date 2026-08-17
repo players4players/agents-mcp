@@ -1,15 +1,17 @@
 # Configuracao do ecossistema (`agents-mcp`)
 
+**Obrigatorio:** antes de executar qualquer papel, leia `config/ecosystem.config.json` (valores reais deste fork) e use `config/ecosystem.config.example.json` apenas como referencia de schema.
+
 Este diretorio concentra **todas as variaveis de ambiente e placeholders** usados pela documentacao canonica e pelos workers.
 
-A documentacao em `agents/` e `AGENTS.md` **nao deve citar marca, org real ou dominio de produto**. Use apenas placeholders. Os valores reais ficam aqui (ou no ambiente CI).
+A documentacao em `agents/` e `AGENTS.md` **nao deve citar marca, org real ou dominio de produto** no texto generico. Os valores reais ficam em `ecosystem.config.json`.
 
 ## Arquivos
 
 | Arquivo | Uso |
 |---------|-----|
 | `ecosystem.config.example.json` | Modelo versionado — copiar e preencher |
-| `ecosystem.config.json` | Valores do fork ( **nao** commitar segredos; pode ser local ou gerado no CI) |
+| `ecosystem.config.json` | **Valores deste fork (versionado)**. Sem tokens/secrets. |
 | `ecosystem.config.schema.json` | Schema JSON opcional para validacao |
 
 ```bash

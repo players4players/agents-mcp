@@ -9,10 +9,11 @@ Todo wrapper local de `developer` deve apontar para este arquivo.
 Ao iniciar uma execucao:
 
 1. leia este arquivo
-2. leia `agents/skills/README.md`
-3. leia `agents/skills/shared/README.md`
-4. leia `agents/skills/shared/operations/agent-execution-baseline.md`
-5. leia `agents/skills/shared/operations/copilot-cooperation.md`
+2. **Obrigatorio:** leia `config/ecosystem.config.json` (valores reais do fork: `<OWNER>`, project, repositorios, ajuda, runners)
+3. leia `agents/skills/README.md`
+4. leia `agents/skills/shared/README.md`
+5. leia `agents/skills/shared/operations/agent-execution-baseline.md`
+6. leia `agents/skills/shared/operations/copilot-cooperation.md`
 
 **Obrigatorio:** leia `agents/skills/shared/operations/copilot-cooperation.md` (cooperacao com Copilot, workers, runners e Actions).
 6. leia `agents/skills/shared/operations/issue-queue-discovery.md`

@@ -9,10 +9,11 @@ Todo wrapper local de `sysadmin` deve apontar para este arquivo.
 Ao iniciar uma execucao:
 
 1. leia este arquivo
-2. **determine o modo** (`discover` ou `resolve`) — ver secao abaixo
-3. leia `agents/skills/README.md`
-4. leia `agents/skills/shared/README.md`
-5. leia `agents/skills/shared/operations/agent-execution-baseline.md`
+2. **Obrigatorio:** leia `config/ecosystem.config.json` (valores reais do fork: `<OWNER>`, project, repositorios, ajuda, runners)
+3. **determine o modo** (`discover` ou `resolve`) — ver secao abaixo
+4. leia `agents/skills/README.md`
+5. leia `agents/skills/shared/README.md`
+6. leia `agents/skills/shared/operations/agent-execution-baseline.md`
 
 **Obrigatorio:** leia `agents/skills/shared/operations/copilot-cooperation.md` (cooperacao com Copilot, workers, runners e Actions).
 6. leia `agents/skills/shared/security/security-guardrails.md` e `operational-security-guardrails.md`

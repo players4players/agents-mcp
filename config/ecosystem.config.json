@@ -1,0 +1,99 @@
+{
+  "$schema": "./ecosystem.config.schema.json",
+  "description": "Configuracao preenchida deste fork. Documentacao canonica usa placeholders; valores reais estao aqui.",
+
+  "owner": {
+    "placeholder": "<OWNER>",
+    "env": "OWNER",
+    "value": "players4players",
+    "description": "Organizacao GitHub dona dos repositorios."
+  },
+
+  "github": {
+    "token_env": ["GITHUB_TOKEN", "GH_TOKEN"],
+    "core_repository": {
+      "placeholder": "<OWNER>/agents-mcp",
+      "env": "AGENTS_MCP_REPOSITORY",
+      "value": "players4players/agents-mcp",
+      "description": "Repositorio canonico de agents e skills."
+    },
+    "product_repositories": {
+      "env": "PRODUCT_REPOSITORIES",
+      "value": [
+        "players4players/cg-community",
+        "players4players/api"
+      ],
+      "description": "Repositorios de produto cobertos pelos agents."
+    }
+  },
+
+  "project": {
+    "url": {
+      "placeholder": "<PROJECT_URL>",
+      "env": "PROJECT_URL",
+      "value": "https://github.com/orgs/players4players/projects/1",
+      "description": "URL do ProjectV2 operacional (ajuste o numero se o board for outro)."
+    },
+    "org": {
+      "placeholder": "<OWNER>",
+      "env": ["PROJECT_ORG", "QA_PROJECT_ORG", "DEVOPS_PROJECT_ORG"],
+      "value": "players4players",
+      "description": "Organizacao do ProjectV2."
+    },
+    "number": {
+      "placeholder": "<PROJECT_NUMBER>",
+      "env": ["PROJECT_NUMBER", "QA_PROJECT_NUMBER", "DEVOPS_PROJECT_NUMBER"],
+      "value": 1,
+      "description": "Numero do ProjectV2 operacional."
+    }
+  },
+
+  "documentation": {
+    "help_center_url": {
+      "placeholder": "<HELP_CENTER_URL>",
+      "env": "HELP_CENTER_URL",
+      "value": "",
+      "description": "URL base da central de ajuda (preencher quando existir)."
+    },
+    "help_center_host": {
+      "placeholder": "<HELP_CENTER_HOST>",
+      "env": "HELP_CENTER_HOST",
+      "value": "",
+      "description": "Host da central de ajuda sem esquema."
+    },
+    "team_email": {
+      "placeholder": "<TEAM_EMAIL>",
+      "env": "TEAM_EMAIL",
+      "value": "",
+      "description": "E-mail para avisos de documentacao publicada."
+    }
+  },
+
+  "runners": {
+    "defaults": {
+      "QA_TARGET_STATUS": "",
+      "QA_APPROVED_STATUS": "",
+      "QA_DEVOPS_STATUS": "",
+      "QA_DEVELOPER_STATUS": "",
+      "QA_SECURITY_STATUS": "",
+      "QA_UNTRACKED_STATUS": "",
+      "QA_TASK_LIMIT": "5",
+      "QA_AUTO_MERGE": "false",
+      "DEVOPS_TARGET_STATUS": "",
+      "DEVOPS_UNTRACKED_STATUS": "",
+      "CTO_CORE_REPOSITORY": "players4players/agents-mcp",
+      "TECHNICAL_LEAD_CORE_REPOSITORY": "players4players/agents-mcp",
+      "DEVELOPER_AGENT_LOGIN": "",
+      "DEVELOPER_COPILOT_BASE_REF": "master",
+      "OWNER": "players4players",
+      "PROJECT_ORG": "players4players",
+      "QA_PROJECT_ORG": "players4players",
+      "DEVOPS_PROJECT_ORG": "players4players",
+      "PROJECT_NUMBER": "1",
+      "QA_PROJECT_NUMBER": "1",
+      "DEVOPS_PROJECT_NUMBER": "1",
+      "AGENTS_MCP_REPOSITORY": "players4players/agents-mcp"
+    },
+    "description": "Defaults de runtime alinhados a este fork. Secrets (GITHUB_TOKEN) nao ficam neste arquivo."
+  }
+}
