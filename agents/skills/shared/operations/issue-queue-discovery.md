@@ -14,14 +14,14 @@ A fonte primaria da fila sao **issues + labels** (e estado open/closed).
 - **Nao e proibido** usar GitHub Projects (ProjectV2).
 - **Prefira nao usar** ProjectV2 quando labels e busca de issues bastarem (fila, elegibilidade, handoff).
 - Use ProjectV2 quando for preciso: associar issue recem-criada ao board, ler status/coluna complementar, ou quando o prompt pedir explicitamente.
-- Projeto operacional padrao da org: [players4players Project #1](https://github.com/orgs/players4players/projects/1/views/1) (`organization` `players4players`, `number` `1`).
+- Projeto operacional padrao da org: [OWNER Project #1](PROJECT_URL (org Project operacional)) (`organization` `OWNER`, `number` `1`).
 
 ## Associacao obrigatoria ao criar task
 
 Sempre que um agent **criar** uma issue/task nova:
 
 1. Crie a issue no repositorio adequado.
-2. **Associe-a ao projeto** `https://github.com/orgs/players4players/projects/1/views/1` (ProjectV2 da org, number `1`).
+2. **Associe-a ao projeto** `PROJECT_URL (org Project operacional)` (ProjectV2 da org, number `1`).
 3. Aplique as labels `agent:*` necessarias.
 
 Falha ao associar ao projeto deve ser registrada no comentario da issue e tentada de novo quando houver permissao/API; a issue em si nao deve ficar “solta” sem tentativa de vinculo.
@@ -33,7 +33,7 @@ Falha ao associar ao projeto deve ser registrada no comentario da issue e tentad
 
 ## Fonte de verdade da fila
 
-- Issues do GitHub na org `players4players` (ou escopo restrito pelo prompt).
+- Issues do GitHub na org `OWNER` (ou escopo restrito pelo prompt).
 - Labels oficiais do papel + estado da issue + comentarios.
 - ProjectV2 como complemento (board), nao como unico criterio quando labels bastam.
 
@@ -41,7 +41,7 @@ Falha ao associar ao projeto deve ser registrada no comentario da issue e tentad
 
 1. Se o prompt definir `owner/repo` + numero da issue → trabalhe **somente** nela (ainda assim valide elegibilidade do papel).
 2. Se o prompt **nao** definir issue/repositorio:
-   - busque issues em **todos** os repositorios da org `players4players` (preferencialmente por label/estado);
+   - busque issues em **todos** os repositorios da org `OWNER` (preferencialmente por label/estado);
    - se util, complemente com itens do Project #1;
    - filtre pelas regras de elegibilidade do papel;
    - **QA/Security:** pode escolher **varias** elegiveis (ordenar por prioridade e `updated`); demais papeis: escolha **exatamente uma**;
@@ -58,7 +58,7 @@ Este template e exclusivo do fluxo paralelo do `Developer`. O Full Pipeline / Ma
 
 Fonte primaria:
 
-- issues `open` na org `players4players`;
+- issues `open` na org `OWNER`;
 - labels de ownership/estado;
 - Project #1 como complemento para coluna/status (`Ready` e `Working`).
 

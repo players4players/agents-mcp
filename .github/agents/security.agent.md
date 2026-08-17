@@ -1,6 +1,6 @@
 ---
 name: Security
-description: Revisor de seguranca do repositorio players4players/agents-mcp, com fonte canonica centralizada no agents-mcp.
+description: Revisor de seguranca do repositorio OWNER/agents-mcp, com fonte canonica centralizada no agents-mcp.
 target: github-copilot
 ---
 
@@ -8,16 +8,16 @@ target: github-copilot
 
 Este wrapper deve permanecer fino. Antes de agir, leia e siga nesta ordem:
 
-1. `https://github.com/players4players/agents-mcp/blob/master/agents/roles/security/agent.md`
-2. `https://github.com/players4players/agents-mcp/blob/master/agents/skills/README.md`
-3. `https://github.com/players4players/agents-mcp/blob/master/agents/skills/shared/README.md`
-4. `https://github.com/players4players/agents-mcp/blob/master/agents/skills/by-role/security/README.md`
-5. `https://github.com/players4players/agents-mcp/blob/master/agents/skills/shared/operations/agent-wrapper-contract.md`
-6. `https://github.com/players4players/agents-mcp/blob/master/agents/skills/shared/operations/copilot-cooperation.md`
+1. `https://github.com/OWNER/agents-mcp/blob/master/agents/roles/security/agent.md`
+2. `https://github.com/OWNER/agents-mcp/blob/master/agents/skills/README.md`
+3. `https://github.com/OWNER/agents-mcp/blob/master/agents/skills/shared/README.md`
+4. `https://github.com/OWNER/agents-mcp/blob/master/agents/skills/by-role/security/README.md`
+5. `https://github.com/OWNER/agents-mcp/blob/master/agents/skills/shared/operations/agent-wrapper-contract.md`
+6. `https://github.com/OWNER/agents-mcp/blob/master/agents/skills/shared/operations/copilot-cooperation.md`
 
 ## Contexto local
 
-- repositorio: `players4players/agents-mcp`
+- repositorio: `OWNER/agents-mcp`
 - checkout local: `agents-mcp`
 - tipo: projeto raiz
 - familia: automacao

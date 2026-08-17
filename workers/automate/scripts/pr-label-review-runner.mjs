@@ -94,7 +94,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'players4players-pr-label-review-runner',
+            'User-Agent': 'OWNER-pr-label-review-runner',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -141,7 +141,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'players4players-pr-label-review-runner',
+            'User-Agent': 'OWNER-pr-label-review-runner',
             ...(options.headers || {}),
           },
         });
@@ -504,7 +504,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', 'players4players'));
+  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', 'OWNER'));
   const projectNumber = Number(env('PR_REVIEW_PROJECT_NUMBER', env('CTO_PROJECT_NUMBER', '1')));
   const role = getRole();
   const meta = REVIEWER_META[role];

@@ -28,7 +28,7 @@ async function githubGraphQL(query, variables = {}, extraHeaders = {}) {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
-      'User-Agent': 'players4players-developer-automation',
+      'User-Agent': 'OWNER-developer-automation',
       ...extraHeaders,
     },
     body: JSON.stringify({ query, variables }),
@@ -172,7 +172,7 @@ function sortByCreatedAt(items) {
 
 function buildDeveloperInstructions(issueRef, issueNumber) {
   return [
-    `Atue como o agent Developer da players4players para a issue ${issueRef}.`,
+    `Atue como o agent Developer do ecossistema para a issue ${issueRef}.`,
     'Antes de agir, leia e siga `.github/agents/developer.agent.md` no repositório alvo.',
     'Leia também o `AGENTS.md` mais específico do código afetado.',
     `Trabalhe a partir do branch \`task-${issueNumber}\` derivado de \`master\`, reutilizando-o quando ele já existir.`,
@@ -276,7 +276,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('DEVELOPER_PROJECT_ORG', 'players4players');
+  const org = env('DEVELOPER_PROJECT_ORG', 'OWNER');
   const projectNumber = Number(env('DEVELOPER_PROJECT_NUMBER', '1'));
   const dryRun = env('DEVELOPER_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatus = env('DEVELOPER_WORK_STATUS', 'Ready');

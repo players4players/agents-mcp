@@ -50,7 +50,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'players4players-cto-pr-finalizer',
+            'User-Agent': 'OWNER-cto-pr-finalizer',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -97,7 +97,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'players4players-cto-pr-finalizer',
+            'User-Agent': 'OWNER-cto-pr-finalizer',
             ...(options.headers || {}),
           },
         });
@@ -393,7 +393,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('CTO_PROJECT_ORG', 'players4players');
+  const org = env('CTO_PROJECT_ORG', 'OWNER');
   const projectNumber = Number(env('CTO_PROJECT_NUMBER', '1'));
   const dryRun = env('CTO_FINALIZER_DRY_RUN', env('CTO_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const stagingBranch = env('CTO_STAGING_BRANCH', DEFAULT_STAGING_BRANCH);

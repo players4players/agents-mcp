@@ -1,6 +1,6 @@
-# players4players GitHub Project MCP Agents
+# GitHub Project MCP Agents
 
-Este repositorio e a fonte oficial para automacoes, agents, runners, workflows e instrucoes operacionais do ecossistema players4players.
+Este repositorio e a fonte oficial para automacoes, agents, runners, workflows e instrucoes operacionais do ecossistema deste repositorio.
 
 ## Fonte canonica
 

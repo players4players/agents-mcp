@@ -19,9 +19,9 @@ runs:
         BASE: ${{ inputs.base_branch }}
       run: |
         set -euo pipefail
-        CUSTOM_INSTRUCTIONS='Atue 100% como Security do players4players.
+        CUSTOM_INSTRUCTIONS='Atue 100% como Security do ecossistema.
 Leia e siga OBRIGATORIAMENTE a fonte canônica única:
-https://raw.githubusercontent.com/players4players/agents-mcp/master/agents/roles/security/agent.md'
+https://raw.githubusercontent.com/OWNER/agents-mcp/master/agents/roles/security/agent.md'
 
         gh issue edit "$ISSUE" --repo "$REPO" --add-label "agent:security" || true
 

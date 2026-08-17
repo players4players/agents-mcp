@@ -55,7 +55,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'players4players-developer-pr-dispatch',
+            'User-Agent': 'OWNER-developer-pr-dispatch',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -326,7 +326,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('AGENT_PROJECT_ORG', 'players4players');
+  const org = env('AGENT_PROJECT_ORG', 'OWNER');
   const projectNumber = Number(env('AGENT_PROJECT_NUMBER', '1'));
   const dryRun = env('DEVELOPER_DRY_RUN', env('AGENT_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const allowedAssociations = new Set(

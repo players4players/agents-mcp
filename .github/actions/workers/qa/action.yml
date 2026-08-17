@@ -19,9 +19,9 @@ runs:
         BASE: ${{ inputs.base_branch }}
       run: |
         set -euo pipefail
-        CUSTOM_INSTRUCTIONS='Atue 100% como QA do players4players.
+        CUSTOM_INSTRUCTIONS='Atue 100% como QA do ecossistema.
 Leia e siga OBRIGATORIAMENTE a fonte canônica única:
-https://raw.githubusercontent.com/players4players/agents-mcp/master/agents/roles/qa/agent.md'
+https://raw.githubusercontent.com/OWNER/agents-mcp/master/agents/roles/qa/agent.md'
 
         gh issue edit "$ISSUE" --repo "$REPO" --add-label "agent:qa" || true
 

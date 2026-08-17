@@ -12,7 +12,7 @@ const REST_API = 'https://api.github.com';
 const RETRY = githubRetryConfig('INGEST');
 
 const CONFIG = {
-  org: process.env.QA_PROJECT_ORG || process.env.PROJECT_ORG || 'players4players',
+  org: process.env.QA_PROJECT_ORG || process.env.PROJECT_ORG || 'OWNER',
   projectNumber: Number(process.env.QA_PROJECT_NUMBER || process.env.PROJECT_NUMBER || 1),
   status: process.env.DEVOPS_UNTRACKED_STATUS || process.env.QA_UNTRACKED_STATUS || 'Work',
   repository: process.env.GITHUB_REPOSITORY,
@@ -327,7 +327,7 @@ async function getRepositoryAssignableActor(repositoryFullName) {
 
 async function assignIssueToDeveloper(issueId, repositoryId, actorId, issueRef, issueNumber) {
   const customInstructions = [
-    `Atue como o agent Developer da players4players para a issue ${issueRef}.`,
+    `Atue como o agent Developer do ecossistema para a issue ${issueRef}.`,
     'Antes de agir, leia e siga `.github/agents/developer.agent.md` no repositório alvo.',
     'Leia também o `AGENTS.md` mais específico do código afetado.',
     `Trabalhe a partir do branch \`task-${issueNumber}\` derivado de \`master\`, reutilizando-o quando ele já existir.`,

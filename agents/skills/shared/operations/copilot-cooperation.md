@@ -1,6 +1,6 @@
 # Copilot Cooperation (obrigatoria)
 
-Skill **transversal**: todo agent do ecossistema `players4players` **deve estender** esta skill. Nenhum papel opera isolado do Copilot Coding Agent, workers, runners ou GitHub Actions quando essas superficies ajudam a concluir o trabalho.
+Skill **transversal**: todo agent do ecossistema deste repositorio **deve estender** esta skill. Nenhum papel opera isolado do Copilot Coding Agent, workers, runners ou GitHub Actions quando essas superficies ajudam a concluir o trabalho.
 
 ## Objetivo
 
@@ -25,7 +25,7 @@ Wrappers em `.github/agents/*.agent.md` (`target: github-copilot`) herdam esta s
 | **Scripts de sync** (`workers/scripts/sync-copilot-agents.mjs`) | Regenerar wrappers Copilot a partir da fonte canonica |
 | **API GitHub** | PR, checks, merge — com referencia `owner/repo#n` |
 
-## Fila (players4players)
+## Fila (OWNER)
 
 Siga `issue-queue-discovery.md` deste repositorio (issues/labels e Project quando aplicavel). Ao cooperar com Copilot, cite sempre `owner/repo#n` no PR.
 

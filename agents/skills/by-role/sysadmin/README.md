@@ -13,7 +13,7 @@ Se o modo nao estiver claro no prompt ou no nome do job → **nao execute**.
 
 ## Projeto GitHub
 
-- Ao **criar** qualquer issue: associar ao [Project #1](https://github.com/orgs/players4players/projects/1/views/1) (org `players4players`, number `1`).
+- Ao **criar** qualquer issue: associar ao [Project #1](PROJECT_URL (org Project operacional)) (org `OWNER`, number `1`).
 - ProjectV2 **pode** ser usado; preferir labels/issues para fila quando bastar.
 
 ## Anti-conflito

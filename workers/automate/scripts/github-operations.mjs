@@ -69,7 +69,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${auth}`,
-            'User-Agent': 'players4players-github-manager',
+            'User-Agent': 'OWNER-github-manager',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -114,7 +114,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${auth}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'players4players-github-manager',
+            'User-Agent': 'OWNER-github-manager',
             ...(options.headers || {}),
           },
         });
@@ -889,7 +889,7 @@ function serializeAuditIssue(item) {
 }
 
 async function runManagerAudit(explicitDryRun = null) {
-  const org = env('GITHUB_MANAGER_PROJECT_ORG', 'players4players');
+  const org = env('GITHUB_MANAGER_PROJECT_ORG', 'OWNER');
   const projectNumber = Number(env('GITHUB_MANAGER_PROJECT_NUMBER', '1'));
   const dryRun =
     explicitDryRun === null

@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Definir a barra comum de qualidade de codigo para `Developer` e `Quality Assurance` no ecossistema `players4players`.
+Definir a barra comum de qualidade de codigo para `Developer` e `Quality Assurance` no ecossistema deste repositorio.
 
 Esta skill e a fonte oficial para criterios compartilhados de:
 

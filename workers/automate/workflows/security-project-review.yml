@@ -27,7 +27,7 @@ jobs:
           APP_ID: ${{ secrets.APP_ID }}
           APP_INSTALLATION_ID: ${{ secrets.APP_INSTALLATION_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
-          SECURITY_PROJECT_ORG: players4players
+          SECURITY_PROJECT_ORG: OWNER
           SECURITY_PROJECT_NUMBER: 1
           SECURITY_DRY_RUN: false
           SECURITY_OUTPUT_DIR: ./.security-output

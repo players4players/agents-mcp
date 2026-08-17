@@ -1,18 +1,18 @@
 {
   "requested_at": "2026-08-01T18:14:00Z",
   "requested_by": "CTO",
-  "purpose": "Adicionar app-community#298 ao Backlog do ProjectV2 players4players#1",
+  "purpose": "Adicionar app-community#298 ao Backlog do ProjectV2 OWNER#1",
   "dry_run": false,
   "report_to": {
-    "repo_full_name": "players4players/agents-mcp",
+    "repo_full_name": "OWNER/agents-mcp",
     "issue_number": 92
   },
   "operations": [
     {
       "type": "project_status",
-      "org": "players4players",
+      "org": "OWNER",
       "project_number": 1,
-      "repo_full_name": "players4players/app-community",
+      "repo_full_name": "OWNER/app-community",
       "issue_number": 298,
       "target_status": "Backlog"
     }

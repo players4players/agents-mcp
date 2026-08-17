@@ -1,6 +1,6 @@
 # Automation
 
-Esta pasta concentra a fonte canônica das regras-base usadas pelos custom agents do ecossistema `players4players`.
+Esta pasta concentra a fonte canônica das regras-base usadas pelos custom agents do ecossistema deste repositorio.
 
 ## Objetivo
 

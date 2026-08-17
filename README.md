@@ -1,6 +1,6 @@
 # agents-mcp
 
-Repositório de orquestração dos agents, skills e workers do ecossistema players4players.
+Repositório de orquestração dos agents, skills e workers do ecossistema deste repositorio.
 
 ## Estrutura
 

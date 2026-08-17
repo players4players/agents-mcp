@@ -12,9 +12,9 @@ const REST_API_URL = 'https://api.github.com';
 const ALL_AGENT_LABELS = ['agent:developer', 'agent:security', 'agent:qa', 'agent:devops'];
 const DEFAULT_KNOWN_AGENT_LOGINS = 'github-copilot[bot],copilot-swe-agent,copilot';
 const DEFAULT_UNSUPPORTED_LABEL = 'ops:copilot-unavailable';
-const DEFAULT_CORE_REPOSITORY = 'players4players/agents-mcp';
+const DEFAULT_CORE_REPOSITORY = 'OWNER/agents-mcp';
 const DEFAULT_PRIORITY_REPOSITORIES =
-  'players4players/app-community,players4players/api-community,players4players/api-whatsapp';
+  'OWNER/app-community,OWNER/api-community,OWNER/api-whatsapp';
 const DEFAULT_STALE_HOURS = '24';
 const DEFAULT_STALE_DRAFT_HOURS = '24';
 const DEFAULT_STALE_OPEN_PR_HOURS = '48';
@@ -54,7 +54,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'players4players-cto-supervisor',
+            'User-Agent': 'OWNER-cto-supervisor',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -102,7 +102,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'players4players-cto-supervisor',
+            'User-Agent': 'OWNER-cto-supervisor',
             ...(options.headers || {}),
           },
         });
@@ -1189,7 +1189,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('CTO_PROJECT_ORG', 'players4players');
+  const org = env('CTO_PROJECT_ORG', 'OWNER');
   const projectNumber = Number(env('CTO_PROJECT_NUMBER', '1'));
   const dryRun = env('CTO_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatus = env('CTO_WORK_STATUS', 'Ready');

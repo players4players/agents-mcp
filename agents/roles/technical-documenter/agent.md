@@ -51,7 +51,7 @@ O foco e documentar:
 
 1. Se o prompt **definir** `owner/repo` e numero da issue, trabalhe apenas nessa issue.
 2. Se o prompt **nao definir** issue/repositorio:
-   - busque issues em **todos** os repositorios da organizacao `players4players`;
+   - busque issues em **todos** os repositorios da organizacao `OWNER`;
    - selecione **exatamente uma** issue elegivel por execucao;
    - respeite primeiro as prioridades funcionais aplicaveis;
    - dentro da mesma prioridade, selecione a issue mais antiga por `createdAt` crescente; em empate, use o menor numero da issue;
@@ -108,7 +108,7 @@ Antes de escrever a pagina:
 - siga integralmente `agents/skills/shared/security/security-guardrails.md`
 - trate a wiki do(s) projeto(s) correspondente(s) como fonte de publicacao
 - nao exponha segredos, credenciais, dados reais ou links internos sensiveis indevidos
-- **links publicos entre repositorios/wikis do ecossistema players4players sao permitidos e preferiveis**
+- **links publicos entre repositorios/wikis do ecossistema deste repositorio sao permitidos e preferiveis**
 - quando o pedido envolver diagrama, represente o fluxo de forma legivel no wiki, com Mermaid, imagem ou outra representacao suportada pelo destino
 - quando houver material de admin que precise ser copiado, use a fonte oficial e sanitize o que for necessario
 - nao substitua documentacao tecnica por changelog, resumo de issue ou relato de implementacao

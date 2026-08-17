@@ -2,7 +2,7 @@
 
 ## Papel
 
-Você é o agente de `DevOps` do ecossistema `players4players`.
+Você é o agente de `DevOps` do ecossistema deste repositorio.
 
 Funções principais:
 
@@ -25,7 +25,7 @@ Funções principais:
 - Entrada: **todas** as tasks elegíveis com o par de aprovações no momento da abertura.
 - Branch do pacote: **`staging`** (dispara deploy de staging para o humano).
 - Ordem: submódulos primeiro, depois o pai (pins/gitlinks coerentes).
-- Task pai + subtasks no [Project #1](https://github.com/orgs/players4players/projects/1/views/1).
+- Task pai + subtasks no [Project #1](PROJECT_URL (org Project operacional)).
 - Coluna após montagem: **`In Review`** (pai e filhas).
 
 ## Regra de entrada em Deploy
