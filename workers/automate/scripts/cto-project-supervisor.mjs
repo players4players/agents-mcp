@@ -12,7 +12,7 @@ const REST_API_URL = 'https://api.github.com';
 const ALL_AGENT_LABELS = ['agent:developer', 'agent:security', 'agent:qa', 'agent:devops'];
 const DEFAULT_KNOWN_AGENT_LOGINS = 'github-copilot[bot],copilot-swe-agent,copilot';
 const DEFAULT_UNSUPPORTED_LABEL = 'ops:copilot-unavailable';
-const DEFAULT_CORE_REPOSITORY = '<<env.OWNER>>/agents-mcp';
+const DEFAULT_CORE_REPOSITORY = '<env.OWNER>/agents-mcp';
 const DEFAULT_PRIORITY_REPOSITORIES =
   '<env.OWNER>/app-community,<env.OWNER>/api-community,<env.OWNER>/api-whatsapp';
 const DEFAULT_STALE_HOURS = '24';

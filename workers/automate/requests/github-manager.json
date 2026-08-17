@@ -4,7 +4,7 @@
   "purpose": "Adicionar app-community#298 ao Backlog do ProjectV2 <env.OWNER>#1",
   "dry_run": false,
   "report_to": {
-    "repo_full_name": "<<env.OWNER>>/agents-mcp",
+    "repo_full_name": "<env.OWNER>/agents-mcp",
     "issue_number": 92
   },
   "operations": [
