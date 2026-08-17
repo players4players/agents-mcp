@@ -4,7 +4,7 @@ const GRAPHQL_API = 'https://api.github.com/graphql';
 const REST_API = 'https://api.github.com';
 
 const CONFIG = {
-  org: process.env.QA_PROJECT_ORG || 'OWNER',
+  org: process.env.QA_PROJECT_ORG || '<env.<env.OWNER>>',
   projectNumber: Number(process.env.QA_PROJECT_NUMBER || 1),
   sourceStatus: process.env.QA_TARGET_STATUS || 'Quality Assurance',
   limit: Number(process.env.QA_TASK_LIMIT || 5),

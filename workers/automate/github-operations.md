@@ -47,9 +47,9 @@ Exemplo:
   "operations": [
     {
       "type": "project_status",
-      "org": "OWNER",
+      "org": "<OWNER>",
       "project_number": 1,
-      "repo_full_name": "OWNER/app-community",
+      "repo_full_name": "<OWNER>/app-community",
       "issue_number": 74,
       "target_status": "In Review"
     }

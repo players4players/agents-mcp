@@ -24,7 +24,7 @@ O fluxo do `Developer` roda em paralelo e **nao faz parte** do Full Pipeline / M
 
 O Manager **nao** captura issue de produto para implementar, **nao** implementa codigo de produto, **nao** cria branch `task-{id}` de produto e **nao** faz merge em `dev` de repositorios de produto.
 
-**Excecao `agents-mcp`:** Manager e CTO **podem** editar documentacao e governanca em `OWNER/agents-mcp` (roles, skills, github-flow, checklists). Nessas mudancas o Manager pode criar `task-{id}`, editar arquivos de docs e mergear em `dev`/`staging` conforme o fluxo do proprio `agents-mcp`. Codigo de produto permanece proibido.
+**Excecao `agents-mcp`:** Manager e CTO **podem** editar documentacao e governanca em `<<OWNER>>/agents-mcp` (roles, skills, github-flow, checklists). Nessas mudancas o Manager pode criar `task-{id}`, editar arquivos de docs e mergear em `dev`/`staging` conforme o fluxo do proprio `agents-mcp`. Codigo de produto permanece proibido.
 
 A existencia de trabalho elegivel para `Developer` nao bloqueia a rodada do Manager; inconsistencias de labels/status envolvendo Developer podem ser corrigidas na Prioridade 5 (higiene residual + organizacao de board).
 

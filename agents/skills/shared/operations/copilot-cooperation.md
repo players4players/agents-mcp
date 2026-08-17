@@ -25,7 +25,7 @@ Wrappers em `.github/agents/*.agent.md` (`target: github-copilot`) herdam esta s
 | **Scripts de sync** (`workers/scripts/sync-copilot-agents.mjs`) | Regenerar wrappers Copilot a partir da fonte canonica |
 | **API GitHub** | PR, checks, merge — com referencia `owner/repo#n` |
 
-## Fila (OWNER)
+## Fila (<OWNER>)
 
 Siga `issue-queue-discovery.md` deste repositorio (issues/labels e Project quando aplicavel). Ao cooperar com Copilot, cite sempre `owner/repo#n` no PR.
 

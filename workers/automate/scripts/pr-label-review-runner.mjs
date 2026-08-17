@@ -10,7 +10,7 @@ import {
 const GRAPHQL_URL = 'https://api.github.com/graphql';
 const REST_URL = 'https://api.github.com';
 const RETRY = githubRetryConfig('PR_LABEL_REVIEW');
-const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = 'OWNER,MEMBER,COLLABORATOR';
+const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = '<env.OWNER>,MEMBER,COLLABORATOR';
 const DEFAULT_STAGING_BRANCH = 'staging';
 const DEFAULT_BLOCKED_HEAD_BRANCHES = 'master,main,staging';
 const DEFAULT_WORK_STATUSES = 'Ready,Working';
@@ -94,7 +94,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'OWNER-pr-label-review-runner',
+            'User-Agent': '<env.OWNER>-pr-label-review-runner',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -141,7 +141,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'OWNER-pr-label-review-runner',
+            'User-Agent': '<env.OWNER>-pr-label-review-runner',
             ...(options.headers || {}),
           },
         });
@@ -504,7 +504,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', 'OWNER'));
+  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', '<env.<env.OWNER>>'));
   const projectNumber = Number(env('PR_REVIEW_PROJECT_NUMBER', env('CTO_PROJECT_NUMBER', '1')));
   const role = getRole();
   const meta = REVIEWER_META[role];

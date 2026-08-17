@@ -93,7 +93,7 @@ async function githubGraphQL(query, variables = {}, extraHeaders = {}) {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
-      'User-Agent': 'OWNER-security-automation',
+      'User-Agent': '<env.OWNER>-security-automation',
       ...extraHeaders
     },
     body: JSON.stringify({ query, variables })
@@ -604,7 +604,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('SECURITY_PROJECT_ORG', 'OWNER');
+  const org = env('SECURITY_PROJECT_ORG', '<env.<env.OWNER>>');
   const projectNumber = Number(env('SECURITY_PROJECT_NUMBER', '1'));
   const dryRun = env('SECURITY_DRY_RUN', 'true').toLowerCase() !== 'false';
   const analysts = new Set(parseCsv(env('SECURITY_ANALYST_LOGINS')).map((login) => login.toLowerCase()));

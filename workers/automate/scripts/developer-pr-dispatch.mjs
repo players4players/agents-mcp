@@ -9,7 +9,7 @@ import {
 
 const GRAPHQL_URL = 'https://api.github.com/graphql';
 const RETRY = githubRetryConfig('DEVELOPER_PR_DISPATCH');
-const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = 'OWNER,MEMBER,COLLABORATOR';
+const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = '<env.OWNER>,MEMBER,COLLABORATOR';
 const DEFAULT_WORK_STATUSES = 'Ready,Working';
 const DEVELOPER_LABEL = 'agent:developer';
 const ALL_AGENT_LABELS = [
@@ -55,7 +55,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'OWNER-developer-pr-dispatch',
+            'User-Agent': '<env.OWNER>-developer-pr-dispatch',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -326,7 +326,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('AGENT_PROJECT_ORG', 'OWNER');
+  const org = env('AGENT_PROJECT_ORG', '<env.<env.OWNER>>');
   const projectNumber = Number(env('AGENT_PROJECT_NUMBER', '1'));
   const dryRun = env('DEVELOPER_DRY_RUN', env('AGENT_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const allowedAssociations = new Set(

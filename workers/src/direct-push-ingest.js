@@ -12,7 +12,7 @@ const REST_API = 'https://api.github.com';
 const RETRY = githubRetryConfig('INGEST');
 
 const CONFIG = {
-  org: process.env.QA_PROJECT_ORG || process.env.PROJECT_ORG || 'OWNER',
+  org: process.env.QA_PROJECT_ORG || process.env.PROJECT_ORG || '<env.<env.OWNER>>',
   projectNumber: Number(process.env.QA_PROJECT_NUMBER || process.env.PROJECT_NUMBER || 1),
   status: process.env.DEVOPS_UNTRACKED_STATUS || process.env.QA_UNTRACKED_STATUS || 'Work',
   repository: process.env.GITHUB_REPOSITORY,

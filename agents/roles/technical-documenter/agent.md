@@ -51,7 +51,7 @@ O foco e documentar:
 
 1. Se o prompt **definir** `owner/repo` e numero da issue, trabalhe apenas nessa issue.
 2. Se o prompt **nao definir** issue/repositorio:
-   - busque issues em **todos** os repositorios da organizacao `OWNER`;
+   - busque issues em **todos** os repositorios da organizacao `<<OWNER>>`;
    - selecione **exatamente uma** issue elegivel por execucao;
    - respeite primeiro as prioridades funcionais aplicaveis;
    - dentro da mesma prioridade, selecione a issue mais antiga por `createdAt` crescente; em empate, use o menor numero da issue;

@@ -10,7 +10,7 @@ import {
 const GRAPHQL_URL = 'https://api.github.com/graphql';
 const REST_URL = 'https://api.github.com';
 const RETRY = githubRetryConfig('TECHNICAL_LEAD_PR_FINALIZER');
-const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = 'OWNER,MEMBER,COLLABORATOR';
+const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = '<env.OWNER>,MEMBER,COLLABORATOR';
 const DEFAULT_STAGING_BRANCH = 'staging';
 const DEFAULT_IN_REVIEW_STATUS = 'In Review';
 const QA_ACCEPTED_LABEL = 'approved:qa';
@@ -30,7 +30,7 @@ async function githubGraphQL(query, variables = {}) {
     try {
       response = await fetch(GRAPHQL_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}`, 'User-Agent': 'OWNER-technical-lead-pr-finalizer' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}`, 'User-Agent': '<env.OWNER>-technical-lead-pr-finalizer' },
         body: JSON.stringify({ query, variables }),
       });
     } catch (error) {
@@ -64,7 +64,7 @@ async function githubRest(path, options = {}) {
           Authorization: `Bearer ${token}`,
           'X-GitHub-Api-Version': '2022-11-28',
           'Content-Type': 'application/json',
-          'User-Agent': 'OWNER-technical-lead-pr-finalizer',
+          'User-Agent': '<env.OWNER>-technical-lead-pr-finalizer',
           ...(options.headers || {}),
         },
       });
@@ -203,7 +203,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('TECHNICAL_LEAD_PROJECT_ORG', env('CTO_PROJECT_ORG', 'OWNER'));
+  const org = env('TECHNICAL_LEAD_PROJECT_ORG', env('CTO_PROJECT_ORG', '<env.<env.OWNER>>'));
   const projectNumber = Number(env('TECHNICAL_LEAD_PROJECT_NUMBER', env('CTO_PROJECT_NUMBER', '1')));
   const dryRun = env('TECHNICAL_LEAD_DRY_RUN', env('AGENT_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const stagingBranch = env('TECHNICAL_LEAD_STAGING_BRANCH', DEFAULT_STAGING_BRANCH);

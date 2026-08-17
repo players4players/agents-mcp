@@ -1,6 +1,6 @@
 # Manager Worker + Copilot Workers (fonte canônica)
 
-Este documento é a **fonte canônica** de como o GitHub Actions orquestra o Copilot Coding Agent nos repositórios da org OWNER.
+Este documento é a **fonte canônica** de como o GitHub Actions orquestra o Copilot Coding Agent nos repositórios da org <OWNER>.
 
 Ele descreve o fluxo que existe em **todos** os repositórios após a padronização:
 
@@ -79,7 +79,7 @@ on:
 CUSTOM_INSTRUCTIONS =
   Atue 100% como <papel> do ecossistema.
   Leia e siga OBRIGATORIAMENTE a fonte canônica única:
-  https://raw.githubusercontent.com/OWNER/agents-mcp/master/agents/roles/<papel>/agent.md
+  https://raw.githubusercontent.com/<<OWNER>>/agents-mcp/master/agents/roles/<papel>/agent.md
 ```
 
 Tudo o mais (skills, checklists, labels de aceite, proibições, cooperação com Copilot) está **dentro** do `agent.md` do papel. O Copilot lê esse arquivo e segue a ordem de leitura definida nele.

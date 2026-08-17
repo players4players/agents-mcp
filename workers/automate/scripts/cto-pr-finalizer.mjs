@@ -10,7 +10,7 @@ import {
 const GRAPHQL_URL = 'https://api.github.com/graphql';
 const REST_URL = 'https://api.github.com';
 const RETRY = githubRetryConfig('CTO_PR_FINALIZER');
-const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = 'OWNER,MEMBER,COLLABORATOR';
+const DEFAULT_ALLOWED_AUTHOR_ASSOCIATIONS = '<env.OWNER>,MEMBER,COLLABORATOR';
 const DEFAULT_STAGING_BRANCH = 'staging';
 const DEFAULT_IN_REVIEW_STATUS = 'In Review';
 const QA_ACCEPTED_LABELS = ['qa:accepted', 'approved:qa'];
@@ -50,7 +50,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'OWNER-cto-pr-finalizer',
+            'User-Agent': '<env.OWNER>-cto-pr-finalizer',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -97,7 +97,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'OWNER-cto-pr-finalizer',
+            'User-Agent': '<env.OWNER>-cto-pr-finalizer',
             ...(options.headers || {}),
           },
         });
@@ -393,7 +393,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('CTO_PROJECT_ORG', 'OWNER');
+  const org = env('CTO_PROJECT_ORG', '<env.<env.OWNER>>');
   const projectNumber = Number(env('CTO_PROJECT_NUMBER', '1'));
   const dryRun = env('CTO_FINALIZER_DRY_RUN', env('CTO_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const stagingBranch = env('CTO_STAGING_BRANCH', DEFAULT_STAGING_BRANCH);

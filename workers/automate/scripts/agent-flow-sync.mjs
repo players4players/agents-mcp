@@ -73,7 +73,7 @@ async function githubGraphQL(query, variables = {}) {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'User-Agent': 'OWNER-agent-flow-sync',
+            'User-Agent': '<env.OWNER>-agent-flow-sync',
           },
           body: JSON.stringify({ query, variables }),
         });
@@ -121,7 +121,7 @@ async function githubRest(path, options = {}) {
             Authorization: `Bearer ${token}`,
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/json',
-            'User-Agent': 'OWNER-agent-flow-sync',
+            'User-Agent': '<env.OWNER>-agent-flow-sync',
             ...(options.headers || {}),
           },
         });
@@ -483,7 +483,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('FLOW_PROJECT_ORG', 'OWNER');
+  const org = env('FLOW_PROJECT_ORG', '<env.<env.OWNER>>');
   const projectNumber = Number(env('FLOW_PROJECT_NUMBER', '1'));
   const dryRun = env('FLOW_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatuses = parseCsv(env('FLOW_WORK_STATUSES', 'Ready,Working'));

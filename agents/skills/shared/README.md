@@ -4,7 +4,7 @@ Esta biblioteca cobre as skills compartilhadas do ecossistema.
 
 ## Ecosystem Centrality
 
-Trate `OWNER/agents-mcp` como a fonte primaria para agents, runners, ownership, handoffs e regras estruturais do fluxo.
+Trate `<<OWNER>>/agents-mcp` como a fonte primaria para agents, runners, ownership, handoffs e regras estruturais do fluxo.
 
 ## Task-First Policy
 
@@ -19,9 +19,9 @@ Toda solicitacao precisa estar vinculada a pelo menos uma task ou issue valida n
 
 ## Priority Projects Policy
 
-- `OWNER/app-community`
-- `OWNER/api-community`
-- `OWNER/api-whatsapp`
+- `<OWNER>/app-community`
+- `<OWNER>/api-community`
+- `<OWNER>/api-whatsapp`
 
 ## Agent Delegation Policy
 

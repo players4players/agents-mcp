@@ -19,7 +19,7 @@ A Wiki publica **nao** e changelog, release note, diario de tarefa ou lista do q
 
 - **Nao use ProjectV2** para fila, status, coluna ou handoff.
 - Siga integralmente `issue-queue-discovery.md`.
-- Fonte oficial: issues do GitHub na org `OWNER` (ou escopo do prompt).
+- Fonte oficial: issues do GitHub na org `<<OWNER>>` (ou escopo do prompt).
 - Labels + estado da issue + comentarios sao a fonte de verdade.
 - O agent pode **criar labels** oficiais ausentes.
 
@@ -110,7 +110,7 @@ Exemplo: `Home -> CRM -> Clientes -> Como editar o endereco de um cliente`.
 2. Fluxo tipico: `action=login` (token de login) → login → CSRF → `action=edit` / `action=upload`.
 3. Nao use GitHub Actions como publicador normal.
 4. Nao versionar no Git `*.wiki`, imagens ou assets do conteudo publicado.
-5. O repositorio `OWNER/wiki` pode guardar apenas scripts/automacao operacional, nao o conteudo publicado.
+5. O repositorio `<OWNER>/wiki` pode guardar apenas scripts/automacao operacional, nao o conteudo publicado.
 6. Links finais: `HELP_CENTER_URLindex.php/<Titulo_da_pagina>` (ou URL canonica equivalente).
 
 ### Credenciais
