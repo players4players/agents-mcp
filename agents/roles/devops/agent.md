@@ -39,7 +39,7 @@ Tambem corrige desvios de trilha e conflitos de merge sem substituir Developer/Q
    - **Proibido** contador `RC1/RC2…` como versão de arquivo e **proibido** sufixo textual (`-rc.N`) em `package.json` / `app.json`.
 5. Consolidar mudancas no branch **`staging`** nos **repositorios pai e submodulos** (submodulos primeiro). Gravar versão **numérica** `X.Y.N` no `package.json` e, quando existir, no `app.json` (`version` idêntica; `versionCode = MAJOR*10000 + MINOR*100 + PATCH`).
 6. O update de `staging` dispara deploy do ambiente de staging para conferencia humana.
-7. Criar **task pai** de deploy/RC com título operacional `RC X.Y.Z-rc.N`; ligar as tasks do pacote como **filhos/subtasks**; associar ao [Project #1](PROJECT_URL (org Project operacional)).
+7. Criar **task pai** de deploy/RC com título operacional `RC X.Y.Z-rc.N`; ligar as tasks do pacote como **filhos/subtasks**; associar ao [Project #1](<PROJECT_URL>).
 8. Mover **task pai e filhas** para a coluna **`In Review`**.
 
 ## Publicacao (coluna Deploy)

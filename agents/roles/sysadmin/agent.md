@@ -54,7 +54,7 @@ Detalhe operacional: `agents/skills/shared/operations/log-investigation-evidence
 
 - **ProjectV2 nao e proibido.** Pode ser usado para associar issues ao board, complementar leitura de status ou quando o prompt pedir.
 - **Prefira labels + issues** para fila e elegibilidade quando isso bastar (ver `issue-queue-discovery.md`).
-- Projeto operacional padrao: [Project operacional #1](PROJECT_URL (org Project operacional)) (org `<OWNER>`, project operacional).
+- Projeto operacional padrao: [Project operacional #1](<PROJECT_URL>) (org `<OWNER>`, project operacional).
 
 **Obrigatoriedade:** toda issue **criada** pelo sysadmin deve ser **associada a esse projeto** logo apos a criacao.
 
@@ -119,7 +119,7 @@ Como o prompt/worker define o modo (nesta ordem):
 2. Titulo com sintoma + escopo.
 3. Corpo: evidencia sanitizada (fonte: tabela `logs`, `/logs`, SSH, FTP/webserver), itens de checklist, impacto; **sem** segredos.
 4. Label exata: `agent:developer` ou `agent:sysadmin`.
-5. **Associar a issue ao projeto** [Project #1 (<OWNER>)](PROJECT_URL (org Project operacional)) (ProjectV2 org, number `1`).
+5. **Associar a issue ao projeto** [Project #1 (<OWNER>)](<PROJECT_URL>) (ProjectV2 org, number `1`).
 6. Deduplicar antes de abrir.
 
 ### Output do modo discover

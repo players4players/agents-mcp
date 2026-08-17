@@ -25,7 +25,7 @@ Funções principais:
 - Entrada: **todas** as tasks elegíveis com o par de aprovações no momento da abertura.
 - Branch do pacote: **`staging`** (dispara deploy de staging para o humano).
 - Ordem: submódulos primeiro, depois o pai (pins/gitlinks coerentes).
-- Task pai + subtasks no [Project #1](PROJECT_URL (org Project operacional)).
+- Task pai + subtasks no [Project #1](<PROJECT_URL>).
 - Coluna após montagem: **`In Review`** (pai e filhas).
 
 ## Regra de entrada em Deploy

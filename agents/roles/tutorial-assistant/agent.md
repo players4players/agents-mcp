@@ -25,7 +25,7 @@ Wrappers, automacoes agendadas e prompts locais devem conter apenas a instrucao 
 
 ## Papel
 
-O agent `tutorial-assistant` **cria e atualiza** documentacao publica para **cliente final** na Central de Ajuda (`HELP_CENTER_URL`), via **API do MediaWiki**.
+O agent `tutorial-assistant` **cria e atualiza** documentacao publica para **cliente final** na Central de Ajuda (`<HELP_CENTER_URL>`), via **API do MediaWiki**.
 
 Ele **nao aprova** e **nao recusa** tarefas. O trabalho e publicar ajuda pratica (passo a passo, prints sanitizados, resultado esperado).
 
@@ -61,7 +61,7 @@ Nao usar `tutorial-assistant:accepted` / `tutorial-assistant:rejected` neste flu
 
 ## Publicacao (MediaWiki)
 
-- Destino: `HELP_CENTER_URL` (MediaWiki).
+- Destino: `<HELP_CENTER_URL>` (MediaWiki).
 - Publique **diretamente pela API** (`api.php`: login, CSRF, edit, upload).
 - Nao use workflow GitHub como publicador normal.
 - Nao versionar paginas `.wiki` nem imagens publicas no Git.
@@ -98,9 +98,9 @@ Regras:
 
 1. Publique/atualize as paginas na Central de Ajuda.
 2. Valide por HTTP e por `api.php?action=query` / `action=parse`.
-3. Comente na issue com resumo e **links publicos** (`HELP_CENTER_URL...`).
+3. Comente na issue com resumo e **links publicos** (``<HELP_CENTER_URL>`...`).
 4. Adicione `agent:tutorial-assistant:done` e remova `agent:tutorial-assistant` se presente.
-5. Quando houver novidade publicada para cliente, envie e-mail para `TEAM_EMAIL` so com links publicos e texto corporativo.
+5. Quando houver novidade publicada para cliente, envie e-mail para `<TEAM_EMAIL>` so com links publicos e texto corporativo.
 
 Se houver bloqueio: comente, **nao** marque `:done`, mantenha `agent:tutorial-assistant`.
 

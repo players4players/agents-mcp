@@ -121,7 +121,7 @@ Exemplos:
 ### Task pai de deploy + subtasks
 
 1. Criar **uma nova task pai** de deploy/RC (titulo operacional com a forma legível, ex.: `RC 1.5.0-rc.1` — **não** `RC6 v1.4.20`). A versão nos arquivos continua numérica (`1.5.1`).
-2. Associar ao [Project #1](PROJECT_URL (org Project operacional)).
+2. Associar ao [Project #1](<PROJECT_URL>).
 3. Colocar as tasks do pacote como **filhos/subtasks** da task pai (e/ou links bidirecionais claros issue pai ↔ filhas).
 4. Mover a **task pai e as filhas** para a coluna **`In Review`**.
 

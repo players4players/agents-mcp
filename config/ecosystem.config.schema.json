@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/agents-mcp/ecosystem.config.schema.json",
+  "title": "agents-mcp ecosystem config",
+  "type": "object",
+  "required": ["owner", "github", "project", "documentation"],
+  "properties": {
+    "owner": {
+      "type": "object",
+      "required": ["value"],
+      "properties": {
+        "placeholder": { "type": "string" },
+        "env": { "type": "string" },
+        "value": { "type": "string", "description": "GitHub org or user that owns the repos" },
+        "description": { "type": "string" }
+      }
+    },
+    "github": { "type": "object" },
+    "project": { "type": "object" },
+    "documentation": { "type": "object" },
+    "runners": { "type": "object" }
+  }
+}

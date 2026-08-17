@@ -1,0 +1,88 @@
+{
+  "$schema": "./ecosystem.config.schema.json",
+  "description": "Configuracao do ecossistema agents-mcp. Copie para ecosystem.config.json e preencha. Nenhum valor de marca/produto deve ir para a documentacao canonica — so neste arquivo.",
+
+  "owner": {
+    "placeholder": "<OWNER>",
+    "env": "OWNER",
+    "value": "",
+    "description": "Dono da organizacao ou usuario GitHub que hospeda os repositorios (ex.: a org do fork)."
+  },
+
+  "github": {
+    "token_env": ["GITHUB_TOKEN", "GH_TOKEN"],
+    "core_repository": {
+      "placeholder": "<OWNER>/agents-mcp",
+      "env": "AGENTS_MCP_REPOSITORY",
+      "value": "agents-mcp",
+      "description": "Repositorio canonico de agents/skills (nome curto ou full name OWNER/agents-mcp)."
+    },
+    "product_repositories": {
+      "env": "PRODUCT_REPOSITORIES",
+      "value": [],
+      "description": "Lista de repositorios de produto cobertos pelos agents (full name ou nome curto). Ex.: [\"app-community\", \"api\"]."
+    }
+  },
+
+  "project": {
+    "url": {
+      "placeholder": "<PROJECT_URL>",
+      "env": "PROJECT_URL",
+      "value": "",
+      "description": "URL do ProjectV2 operacional (board). Ex.: https://github.com/orgs/<OWNER>/projects/1"
+    },
+    "org": {
+      "placeholder": "<OWNER>",
+      "env": ["PROJECT_ORG", "QA_PROJECT_ORG", "DEVOPS_PROJECT_ORG"],
+      "value": "",
+      "description": "Organizacao do ProjectV2. Na pratica costuma ser o mesmo que owner."
+    },
+    "number": {
+      "placeholder": "<PROJECT_NUMBER>",
+      "env": ["PROJECT_NUMBER", "QA_PROJECT_NUMBER", "DEVOPS_PROJECT_NUMBER"],
+      "value": 1,
+      "description": "Numero do ProjectV2 operacional."
+    }
+  },
+
+  "documentation": {
+    "help_center_url": {
+      "placeholder": "<HELP_CENTER_URL>",
+      "env": "HELP_CENTER_URL",
+      "value": "",
+      "description": "URL base da central de ajuda (MediaWiki ou equivalente), com barra final opcional."
+    },
+    "help_center_host": {
+      "placeholder": "<HELP_CENTER_HOST>",
+      "env": "HELP_CENTER_HOST",
+      "value": "",
+      "description": "Host da central de ajuda, sem esquema (quando a doc cita so o dominio)."
+    },
+    "team_email": {
+      "placeholder": "<TEAM_EMAIL>",
+      "env": "TEAM_EMAIL",
+      "value": "",
+      "description": "Lista/caixa de e-mail para avisos de documentacao publicada ao cliente."
+    }
+  },
+
+  "runners": {
+    "defaults": {
+      "QA_TARGET_STATUS": "",
+      "QA_APPROVED_STATUS": "",
+      "QA_DEVOPS_STATUS": "",
+      "QA_DEVELOPER_STATUS": "",
+      "QA_SECURITY_STATUS": "",
+      "QA_UNTRACKED_STATUS": "",
+      "QA_TASK_LIMIT": "5",
+      "QA_AUTO_MERGE": "false",
+      "DEVOPS_TARGET_STATUS": "",
+      "DEVOPS_UNTRACKED_STATUS": "",
+      "CTO_CORE_REPOSITORY": "",
+      "TECHNICAL_LEAD_CORE_REPOSITORY": "",
+      "DEVELOPER_AGENT_LOGIN": "",
+      "DEVELOPER_COPILOT_BASE_REF": "master"
+    },
+    "description": "Overrides opcionais para workers em workers/src e workers/automate. Valores vazios = usar default do script ou do ambiente CI."
+  }
+}

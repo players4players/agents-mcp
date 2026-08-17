@@ -22,7 +22,7 @@
 - SemVer: **MINOR** = feature compatível; **PATCH** = bugfix ou reempacote do RC; **MAJOR** = breaking — [semver.org](https://semver.org)
 - **freeze:** nenhuma task nova entra no RC aberto
 - branch do pacote: **`staging`** (dispara deploy de conferencia)
-- task pai + subtasks no [Project #1](PROJECT_URL (org Project operacional))
+- task pai + subtasks no [Project #1](<PROJECT_URL>)
 - colunas: **`In Review`** (pacote montado) → humano → **`Deploy`** → merge em `master` → **`Done`**
 
 ## Fontes principais

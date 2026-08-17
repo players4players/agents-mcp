@@ -14,14 +14,14 @@ A fonte primaria da fila sao **issues + labels** (e estado open/closed).
 - **Nao e proibido** usar GitHub Projects (ProjectV2).
 - **Prefira nao usar** ProjectV2 quando labels e busca de issues bastarem (fila, elegibilidade, handoff).
 - Use ProjectV2 quando for preciso: associar issue recem-criada ao board, ler status/coluna complementar, ou quando o prompt pedir explicitamente.
-- Projeto operacional padrao da org: [<OWNER> Project #1](PROJECT_URL (org Project operacional)) (`organization` `<OWNER>`, `number` `1`).
+- Projeto operacional padrao da org: [<OWNER> Project #1](<PROJECT_URL>) (`organization` `<OWNER>`, `number` `1`).
 
 ## Associacao obrigatoria ao criar task
 
 Sempre que um agent **criar** uma issue/task nova:
 
 1. Crie a issue no repositorio adequado.
-2. **Associe-a ao projeto** `PROJECT_URL (org Project operacional)` (ProjectV2 da org, number `1`).
+2. **Associe-a ao projeto** `<PROJECT_URL>` (ProjectV2 da org, number `1`).
 3. Aplique as labels `agent:*` necessarias.
 
 Falha ao associar ao projeto deve ser registrada no comentario da issue e tentada de novo quando houver permissao/API; a issue em si nao deve ficar “solta” sem tentativa de vinculo.

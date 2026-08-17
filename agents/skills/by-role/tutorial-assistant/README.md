@@ -2,7 +2,7 @@
 
 ## Papel
 
-`Tutorial Assistant` **cria e atualiza** documentacao publica de produto para **cliente final** na Central de Ajuda (`HELP_CENTER_URL`).
+`Tutorial Assistant` **cria e atualiza** documentacao publica de produto para **cliente final** na Central de Ajuda (`<HELP_CENTER_URL>`).
 
 Ele **nao aprova** e **nao recusa** tarefas. Publica ajuda pratica: acao ensinavel, tela reconhecivel, passo a passo e prints sanitizados.
 
@@ -52,7 +52,7 @@ Nao usar `tutorial-assistant:accepted` / `tutorial-assistant:rejected`.
 - `Tutorial Assistant` nao substitui `Developer`, `Security`, `QA`, `DevOps` ou `Sysadmin` em trilhas tecnicas abertas.
 - Nao invente regra de negocio, endpoint, evidencia ou publicacao sem fonte real.
 - GitHub e fonte interna de rastreabilidade; a pagina publica **nao** expoe links GitHub, branches, commits, issues ou PRs.
-- Publicacao so via API MediaWiki em `ajuda.example.com`.
+- Publicacao so via API MediaWiki em `<HELP_CENTER_HOST>`.
 
 ## Antes de agir
 
@@ -72,7 +72,7 @@ Nao usar `tutorial-assistant:accepted` / `tutorial-assistant:rejected`.
 5. Publique via API MediaWiki (edit + upload de imagens).
 6. Valide HTTP + `api.php?action=query` / `action=parse`.
 7. Comente na issue com links publicos; aplique labels de conclusao.
-8. E-mail `TEAM_EMAIL` apenas se houver novidade publicada para cliente.
+8. E-mail `<TEAM_EMAIL>` apenas se houver novidade publicada para cliente.
 
 ## Formato obrigatorio da pagina
 
@@ -106,12 +106,12 @@ Exemplo: `Home -> CRM -> Clientes -> Como editar o endereco de um cliente`.
 
 ## Publicacao MediaWiki (API)
 
-1. Publique paginas e arquivos diretamente em `HELP_CENTER_URLapi.php`.
+1. Publique paginas e arquivos diretamente em `<HELP_CENTER_URL>api.php`.
 2. Fluxo tipico: `action=login` (token de login) → login → CSRF → `action=edit` / `action=upload`.
 3. Nao use GitHub Actions como publicador normal.
 4. Nao versionar no Git `*.wiki`, imagens ou assets do conteudo publicado.
 5. O repositorio `<OWNER>/wiki` pode guardar apenas scripts/automacao operacional, nao o conteudo publicado.
-6. Links finais: `HELP_CENTER_URLindex.php/<Titulo_da_pagina>` (ou URL canonica equivalente).
+6. Links finais: `<HELP_CENTER_URL>index.php/<Titulo_da_pagina>` (ou URL canonica equivalente).
 
 ### Credenciais
 
@@ -135,7 +135,7 @@ Regras:
 ## Comunicacao por e-mail
 
 1. So apos publicacao validada com novidade para cliente.
-2. Destinatario: `TEAM_EMAIL`.
+2. Destinatario: `<TEAM_EMAIL>`.
 3. Apenas texto corporativo + links publicos da Central de Ajuda.
 4. Sem GitHub, issues, PRs, dados reais ou credenciais.
 

@@ -17,6 +17,8 @@ Entradas principais:
 - `.github/agents/*.agent.md`
 - `workers/automation/`
 - `workers/automate/`
+- `config/ecosystem.config.example.json` — variaveis do fork (`<OWNER>`, project, ajuda, e-mail)
+- `config/README.md` — como preencher a configuracao
 
 
 ## Copilot Cooperation

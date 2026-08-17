@@ -34,11 +34,11 @@ O `tutorial-assistant` **cria e atualiza** documentacao **publica** para cliente
 
 - **Nao aprova** e **nao recusa** tarefas.
 - Labels: `agent:tutorial-assistant` / `agent:tutorial-assistant:done`.
-- Destino: MediaWiki `HELP_CENTER_URL` via **API** (`api.php`).
+- Destino: MediaWiki `<HELP_CENTER_URL>` via **API** (`api.php`).
 - Credenciais de runtime: referencia no Google Drive (`wiki.json` com `host`, `user`, `password`) — nunca versionar no Git.
 - Prints a partir de smoke/browser tests (config de referencia `tests.json` no Drive); dados ficticios/sanitizados.
 - Nao versionar paginas `.wiki` nem imagens publicas no Git.
-- E-mail `TEAM_EMAIL` so apos publicacao validada, com links publicos.
+- E-mail `<TEAM_EMAIL>` so apos publicacao validada, com links publicos.
 
 Labels legadas `tutorial-assistant:accepted` / `tutorial-assistant:rejected` **nao** fazem parte deste fluxo.
 
