@@ -424,7 +424,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('CTO_PROJECT_ORG', '<env.<env.OWNER>>');
+  const org = env('CTO_PROJECT_ORG', '<env.OWNER>');
   const projectNumber = Number(env('CTO_PROJECT_NUMBER', '1'));
   const dryRun = env('CTO_STAGING_DRY_RUN', env('CTO_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const doneStatus = env('CTO_DONE_STATUS', 'Done');

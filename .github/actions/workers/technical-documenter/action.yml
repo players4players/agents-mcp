@@ -22,11 +22,11 @@ runs:
         # Regras 100% no agents-mcp — não copiar checklist/labels aqui
         CUSTOM_INSTRUCTIONS='Atue 100% como technical-documenter do ecossistema.
 Leia e siga OBRIGATORIAMENTE (fonte canônica única):
-https://raw.githubusercontent.com/<<OWNER>>/agents-mcp/master/agents/roles/technical-documenter/agent.md
+https://raw.githubusercontent.com/<OWNER>/agents-mcp/master/agents/roles/technical-documenter/agent.md
 
 Também leia:
-https://raw.githubusercontent.com/<<OWNER>>/agents-mcp/master/agents/skills/shared/operations/copilot-cooperation.md
-https://raw.githubusercontent.com/<<OWNER>>/agents-mcp/master/agents/skills/by-role/technical-documenter/README.md
+https://raw.githubusercontent.com/<OWNER>/agents-mcp/master/agents/skills/shared/operations/copilot-cooperation.md
+https://raw.githubusercontent.com/<OWNER>/agents-mcp/master/agents/skills/by-role/technical-documenter/README.md
 
 Não use regras embutidas neste assignment; a fonte acima prevalece.'
 

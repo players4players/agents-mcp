@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const platformRoot = path.resolve(__dirname, "../..");
 const workspaceRoot = path.dirname(platformRoot);
 
-const CONTROL_OWNER = "<env.<env.OWNER>>";
+const CONTROL_OWNER = "<env.OWNER>";
 const CENTRAL_REPO = "agents-mcp";
 const CENTRAL_BASE_URL = `https://github.com/${CONTROL_OWNER}/${CENTRAL_REPO}/blob/master`;
 const centralWorkspaceName = path.basename(platformRoot);

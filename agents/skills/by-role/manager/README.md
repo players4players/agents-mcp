@@ -12,7 +12,7 @@ Ordem resumida:
 4. **Validadores** — QA; senao Security
 5. **Higiene residual + Organizacao do board** — checklist deste README (In Review visual + higiene de labels/quarteto) quando 1–4 estiverem vazias
 
-O Manager **nao** substitui Developer em codigo de produto. **Excecao:** Manager e CTO podem editar docs/governanca em `<<OWNER>>/agents-mcp`.
+O Manager **nao** substitui Developer em codigo de produto. **Excecao:** Manager e CTO podem editar docs/governanca em `<OWNER>/agents-mcp`.
 
 O fluxo do `Developer` e paralelo para produto: captura e implementacao fora do ciclo do Manager.
 

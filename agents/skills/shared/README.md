@@ -4,7 +4,7 @@ Esta biblioteca cobre as skills compartilhadas do ecossistema.
 
 ## Ecosystem Centrality
 
-Trate `<<OWNER>>/agents-mcp` como a fonte primaria para agents, runners, ownership, handoffs e regras estruturais do fluxo.
+Trate `<OWNER>/agents-mcp` como a fonte primaria para agents, runners, ownership, handoffs e regras estruturais do fluxo.
 
 ## Task-First Policy
 

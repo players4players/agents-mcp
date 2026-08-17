@@ -54,7 +54,7 @@ Detalhe operacional: `agents/skills/shared/operations/log-investigation-evidence
 
 - **ProjectV2 nao e proibido.** Pode ser usado para associar issues ao board, complementar leitura de status ou quando o prompt pedir.
 - **Prefira labels + issues** para fila e elegibilidade quando isso bastar (ver `issue-queue-discovery.md`).
-- Projeto operacional padrao: [Project operacional #1](PROJECT_URL (org Project operacional)) (org `<<OWNER>>`, project operacional).
+- Projeto operacional padrao: [Project operacional #1](PROJECT_URL (org Project operacional)) (org `<OWNER>`, project operacional).
 
 **Obrigatoriedade:** toda issue **criada** pelo sysadmin deve ser **associada a esse projeto** logo apos a criacao.
 

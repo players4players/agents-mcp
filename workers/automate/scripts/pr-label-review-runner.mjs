@@ -504,7 +504,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', '<env.<env.OWNER>>'));
+  const org = env('PR_REVIEW_PROJECT_ORG', env('CTO_PROJECT_ORG', '<env.OWNER>'));
   const projectNumber = Number(env('PR_REVIEW_PROJECT_NUMBER', env('CTO_PROJECT_NUMBER', '1')));
   const role = getRole();
   const meta = REVIEWER_META[role];

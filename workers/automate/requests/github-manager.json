@@ -10,7 +10,7 @@
   "operations": [
     {
       "type": "project_status",
-      "org": "<env.<env.OWNER>>",
+      "org": "<env.OWNER>",
       "project_number": 1,
       "repo_full_name": "<env.OWNER>/app-community",
       "issue_number": 298,

@@ -19,7 +19,7 @@ A Wiki publica **nao** e changelog, release note, diario de tarefa ou lista do q
 
 - **Nao use ProjectV2** para fila, status, coluna ou handoff.
 - Siga integralmente `issue-queue-discovery.md`.
-- Fonte oficial: issues do GitHub na org `<<OWNER>>` (ou escopo do prompt).
+- Fonte oficial: issues do GitHub na org `<OWNER>` (ou escopo do prompt).
 - Labels + estado da issue + comentarios sao a fonte de verdade.
 - O agent pode **criar labels** oficiais ausentes.
 

@@ -25,7 +25,7 @@ O foco e registrar informacoes que ajudem o time a entender:
 ## Independencia operacional (sem ProjectV2)
 
 - **Nao use ProjectV2** para fila, status, coluna ou handoff.
-- Fonte oficial: issues do GitHub em toda a org `<<OWNER>>` (ou no escopo definido pelo prompt).
+- Fonte oficial: issues do GitHub em toda a org `<OWNER>` (ou no escopo definido pelo prompt).
 - Labels + estado da issue + comentarios sao a fonte de verdade.
 - O agent pode **criar labels** oficiais ausentes nos repositorios.
 

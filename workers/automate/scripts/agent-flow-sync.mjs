@@ -483,7 +483,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('FLOW_PROJECT_ORG', '<env.<env.OWNER>>');
+  const org = env('FLOW_PROJECT_ORG', '<env.OWNER>');
   const projectNumber = Number(env('FLOW_PROJECT_NUMBER', '1'));
   const dryRun = env('FLOW_DRY_RUN', 'true').toLowerCase() !== 'false';
   const workStatuses = parseCsv(env('FLOW_WORK_STATUSES', 'Ready,Working'));

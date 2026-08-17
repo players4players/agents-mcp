@@ -595,7 +595,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('QA_PROJECT_ORG', '<env.<env.OWNER>>');
+  const org = env('QA_PROJECT_ORG', '<env.OWNER>');
   const projectNumber = Number(env('QA_PROJECT_NUMBER', '1'));
   const dryRun = env('QA_DRY_RUN', 'true').toLowerCase() !== 'false';
   const securityApprovers = parseCsv(env('QA_SECURITY_APPROVERS')).map((login) => login.toLowerCase());

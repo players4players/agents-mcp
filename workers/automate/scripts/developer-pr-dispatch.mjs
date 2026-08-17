@@ -326,7 +326,7 @@ function writeOutputFile(payload) {
 }
 
 async function main() {
-  const org = env('AGENT_PROJECT_ORG', '<env.<env.OWNER>>');
+  const org = env('AGENT_PROJECT_ORG', '<env.OWNER>');
   const projectNumber = Number(env('AGENT_PROJECT_NUMBER', '1'));
   const dryRun = env('DEVELOPER_DRY_RUN', env('AGENT_DRY_RUN', 'true')).toLowerCase() !== 'false';
   const allowedAssociations = new Set(

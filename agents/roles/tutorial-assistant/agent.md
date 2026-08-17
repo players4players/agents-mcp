@@ -43,7 +43,7 @@ A documentacao publica **nao** e changelog, release note ou relato de implementa
 Mesmas regras de captura do `technical-documenter`, com labels deste papel:
 
 1. Prompt com `owner/repo` + numero → so essa issue (se elegivel).
-2. Prompt sem issue → buscar em **todos** os repositorios da org `<<OWNER>>` e processar **exatamente uma** issue.
+2. Prompt sem issue → buscar em **todos** os repositorios da org `<OWNER>` e processar **exatamente uma** issue.
 
 Candidata se **qualquer** for verdadeira:
 

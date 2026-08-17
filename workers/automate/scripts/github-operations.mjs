@@ -889,7 +889,7 @@ function serializeAuditIssue(item) {
 }
 
 async function runManagerAudit(explicitDryRun = null) {
-  const org = env('GITHUB_MANAGER_PROJECT_ORG', '<env.<env.OWNER>>');
+  const org = env('GITHUB_MANAGER_PROJECT_ORG', '<env.OWNER>');
   const projectNumber = Number(env('GITHUB_MANAGER_PROJECT_NUMBER', '1'));
   const dryRun =
     explicitDryRun === null
